@@ -36,20 +36,23 @@
 }
 body{
     font-family: HankenGrotesk;
+    width: 100%;    
 }
 html {
     font-size: 18px;
+    width: 100%;
 }
 .result-summary{
     --border-radius: 2rem;
-    width: 100vh;
+    width: 100%;
     display: flex;
 }
 @media screen and (min-width:600px) {
     .result-summary {
         display: flex;
         flex-direction: row;
-        width: 100vh;
+        width: 100%;
+        max-width: 600px;
         margin: 100px auto;
         border-radius: var(--border-radius);
         overflow: hidden;
@@ -112,7 +115,7 @@ html {
         margin-bottom: 2rem;
     }
 
-    .result h3 {
+    .result h2 {
         font-size: 1.4rem;
         margin-bottom: 1rem;
     }
