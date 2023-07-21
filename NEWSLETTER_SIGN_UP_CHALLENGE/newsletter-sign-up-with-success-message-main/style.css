@@ -1,0 +1,47 @@
+/* Resets and basic setups */
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "RobotoRegular";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+
+:root {
+    --clr-bg-heading-button: hsl(234, 29%, 20%);
+    --clr-text: hsl(235, 18%, 26%);
+    --clr-white-background: hsl(0, 0%, 100%);
+    --clr-grey: hsl(231, 7%, 60%);
+    --clr-list: hsl(4, 100%, 67%);
+}
+
+/* Body and html base declarations */
+
+html{
+    font-size: 16px;
+    width: 100%;
+}
+body{
+    width: 100%;
+    background-color: var(--clr-bg-heading-button);
+    font-family: "RobotoRegular";
+}
+
+/* Container CSS */
+
+.container{
+    background-color: var(--clr-white-background);
+    width: 75%;
+    display: grid;
+}
