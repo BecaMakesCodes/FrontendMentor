@@ -1,4 +1,4 @@
-/* Resets and basic setups */
+/* Resets and basic setups of fonts and colors */
 
 *,
 ::after,
@@ -26,22 +26,173 @@
     --clr-list: hsl(4, 100%, 67%);
 }
 
-/* Body and html base declarations */
+/* Body, html, img base declarations */
 
-html{
+html {
     font-size: 16px;
     width: 100%;
 }
-body{
+
+body {
     width: 100%;
     background-color: var(--clr-bg-heading-button);
     font-family: "RobotoRegular";
 }
 
+img,
+svg {
+    width: 100%;
+    display: block;
+}
+
+
 /* Container CSS */
 
-.container{
+.container {
+    margin: 300px auto;
     background-color: var(--clr-white-background);
-    width: 75%;
+    width: 60%;
     display: grid;
+    grid-template-columns: 1fr 0.8fr;
+    padding: 1.3rem;
+    border-radius: 25px;
+}
+
+/* Subscribe panel CSS */
+
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin-top: 1rem;
+    color: var(--clr-bg-heading-button);
+}
+
+.heading {
+    font-family: RobotoBold;
+    font-size: 3rem;
+    margin: 1rem 0;
+
+}
+
+.text {
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+}
+
+.list__elements {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.list__elements::before {
+    content: url(assets/images/icon-list.svg);
+}
+
+/* Subscribe form CSS */
+
+.subscribe__form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 90%;
+}
+
+.form__label {
+    font-size: 0.7rem;
+    font-family: RobotoBold;
+}
+
+.input_button_style {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.form__button {
+    background-color: var(--clr-bg-heading-button);
+    color: var(--clr-white-background);
+}
+
+.picture{
+    width: 100%;
+}
+/* Form and button states CSS */
+
+.form__input{
+    border: 1px solid var(--clr-grey);
+}
+.form__input:focus{
+    border: 1px solid var(--clr-bg-heading-button);
+    color: var(--clr-bg-heading-button);
+}
+.form__input:hover{
+    cursor: pointer;
+}
+.form__button:hover{
+    cursor: pointer;
+    background: linear-gradient(to left, hsl(12, 82%, 58%), hsl(350, 90%, 62%));
+}
+
+/* Container CSS for 1366px and wider (desktop/laptop) */
+
+@media screen and (min-width:1366px) {
+    .container {
+        margin: 300px auto;
+        background-color: var(--clr-white-background);
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 0.8fr;
+        padding: 1.3rem;
+        border-radius: 25px;
+    }
+}
+
+/* Container CSS for 480px and smaller */
+
+@media (max-width:520px){
+    html{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    body{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .container{
+        background-color: var(--clr-white-background);
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        margin: 0;
+        border-radius: 0px;
+    }
+    .subscribe{
+        margin: 0;
+        width: 100%;
+       
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    img{
+        width: 100%;
+    }
+    
+    
+    
+
 }
