@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,11 @@
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 </head>
+
 <body>
   <!-- Sign-up form start -->
   <main>
-    <div class="container">
+    <div id="hide_container" class="container">
       <div class="subscribe">
         <h1 class="heading">Stay updated!</h1>
         <p class="text">Join 60,000+ product managers receiving monthly updates on:</p>
@@ -20,10 +22,10 @@
           <li class="list__elements">Measuring to ensure updates are a success</li>
           <li class="list__elements">And much more!</li>
         </ul>
-        <form class="subscribe__form">
+        <form name="sub_form" class="subscribe__form">
           <label class="form__label" for="form_input">Email address</label>
-          <input class="form__input input_button_style " id="form_input" type="email" placeholder="email@company.com">
-          <button class="form__button input_button_style" type="button">Subscribe to monthly newsletter</button>
+          <input name="input_form" class="form__input input_button_style" id="form_input" type="email" placeholder="email@company.com">
+          <button id="hide" class="form__button input_button_style" type="button">Subscribe to monthly newsletter</button>
         </form>
       </div>
       <div class="picture">
@@ -35,15 +37,16 @@
 
   <!-- Success message start -->
 
-  <!--Thanks for subscribing!
+  <div id="reveal_success_container" class="success_container">
+    <h1 class="heading">Thanks for subscribing!</h1>
+    <p class="text">A confirmation email has been sent to ash@loremcompany.com.
+      Please open it and click the button inside to confirm your subscription.</p>
+    <button id="reveal_container" class="form__button input_button_style" type="button">Dismiss message</button>
+  </div>
 
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-  
-  Dismiss message
--->
   <!-- Success message end -->
 
+  <script src="script.js"></script>
 </body>
 
 </html>

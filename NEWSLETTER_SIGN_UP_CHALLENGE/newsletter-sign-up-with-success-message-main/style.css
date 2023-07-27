@@ -56,6 +56,7 @@ svg {
     grid-template-columns: 1fr 0.8fr;
     padding: 1.3rem;
     border-radius: 25px;
+    visibility: visible;
 }
 
 /* Subscribe panel CSS */
@@ -122,6 +123,7 @@ svg {
 .form__button {
     background-color: var(--clr-bg-heading-button);
     color: var(--clr-white-background);
+    font-family: RobotoBold;
 }
 
 .picture{
@@ -191,8 +193,33 @@ svg {
     img{
         width: 100%;
     }
-    
-    
-    
-
 }
+
+
+/* Success container CSS */
+.success_container{
+    margin: -800px auto;
+    background-color: var(--clr-white-background);
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2rem 3.5rem;
+    visibility: hidden;
+
+    & h1{
+        color: var(--clr-bg-heading-button);
+    }
+    & h1::before{
+        content: url(assets/images/icon-success.svg);
+        display: flex;
+        margin-bottom: 1rem;
+    }
+    & p{
+        line-height: 1.5rem;
+    }
+}
+
+
+
+
