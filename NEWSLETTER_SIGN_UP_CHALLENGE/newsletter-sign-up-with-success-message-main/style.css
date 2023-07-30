@@ -113,7 +113,15 @@ svg {
     font-size: 0.7rem;
     font-family: RobotoBold;
 }
-
+.label_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#invalid{
+    color: red;
+    visibility: hidden;
+}
 .input_button_style {
     padding: 1rem;
     border-radius: 5px;
@@ -200,7 +208,7 @@ svg {
 .success_container{
     margin: -800px auto;
     background-color: var(--clr-white-background);
-    width: 36%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     border-radius: 25px;

@@ -22,9 +22,12 @@
           <li class="list__elements">Measuring to ensure updates are a success</li>
           <li class="list__elements">And much more!</li>
         </ul>
-        <form name="sub_form" class="subscribe__form">
-          <label class="form__label" for="form_input">Email address</label>
-          <input name="input_form" class="form__input input_button_style" id="form_input" type="email" placeholder="email@company.com">
+        <form class="subscribe__form">
+          <div class="label_container">
+            <label class="form__label" for="form_input">Email address</label>
+            <label class="form__label" id="invalid" for="form_input">Valid email required</label>
+          </div>
+          <input class="form__input input_button_style" id="form_input" type="email" placeholder="email@company.com">
           <button id="hide" class="form__button input_button_style" type="button">Subscribe to monthly newsletter</button>
         </form>
       </div>
