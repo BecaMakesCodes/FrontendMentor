@@ -65,7 +65,6 @@ svg {
     display: flex;
     flex-direction: column;
     padding: 2rem;
-    margin-top: 1rem;
     color: var(--clr-bg-heading-button);
 }
 
@@ -73,7 +72,6 @@ svg {
     font-family: RobotoBold;
     font-size: 3rem;
     margin: 1rem 0;
-
 }
 
 .text {
@@ -90,6 +88,7 @@ svg {
 .list__elements {
     list-style-type: none;
     display: flex;
+    font-size: 0.9rem;
     flex-direction: row;
     align-items: center;
     gap: 1rem;
@@ -156,7 +155,7 @@ svg {
 
 /* Container CSS for 1366px and wider (desktop/laptop) */
 
-@media screen and (min-width:1366px) {
+@media (min-width:600px) and (max-width:1440px) {
     .container {
         margin: 300px auto;
         background-color: var(--clr-white-background);
@@ -166,6 +165,7 @@ svg {
         padding: 1.3rem;
         border-radius: 25px;
     }
+    
 }
 
 /* Container CSS for 480px and smaller */
@@ -226,6 +226,9 @@ svg {
     & p{
         line-height: 1.5rem;
     }
+}
+#text__email{
+    font-weight: bold;
 }
 
 
