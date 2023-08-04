@@ -49,11 +49,11 @@ svg {
 /* Container CSS */
 
 .container {
-    margin: 300px auto;
+    margin: 100px auto;
     background-color: var(--clr-white-background);
-    width: 60%;
+    width: 55%;
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: 1fr 0.9fr;
     padding: 1.3rem;
     border-radius: 25px;
     visibility: visible;
@@ -64,14 +64,15 @@ svg {
 .subscribe {
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    padding: 0 2rem;
     color: var(--clr-bg-heading-button);
+    justify-content: center;
 }
 
 .heading {
     font-family: RobotoBold;
-    font-size: 3rem;
-    margin: 1rem 0;
+    font-size: 2.8rem;
+    margin-bottom: 1rem ;
 }
 
 .text {
@@ -135,6 +136,8 @@ svg {
 
 .picture{
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 /* Form and button states CSS */
 
@@ -152,57 +155,6 @@ svg {
     cursor: pointer;
     background: linear-gradient(to left, hsl(12, 82%, 58%), hsl(350, 90%, 62%));
 }
-
-/* Container CSS for 1366px and wider (desktop/laptop) */
-
-@media (min-width:600px) and (max-width:1440px) {
-    .container {
-        margin: 300px auto;
-        background-color: var(--clr-white-background);
-        width: 60%;
-        display: grid;
-        grid-template-columns: 1fr 0.8fr;
-        padding: 1.3rem;
-        border-radius: 25px;
-    }
-    
-}
-
-/* Container CSS for 480px and smaller */
-
-@media (max-width:520px){
-    html{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    body{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-    }
-    .container{
-        background-color: var(--clr-white-background);
-        width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        padding: 0;
-        margin: 0;
-        border-radius: 0px;
-    }
-    .subscribe{
-        margin: 0;
-        width: 100%;
-       
-    }
-    .heading{
-        font-size: 2.5rem;
-    }
-    img{
-        width: 100%;
-    }
-}
-
 
 /* Success container CSS */
 .success_container{
@@ -231,6 +183,52 @@ svg {
     font-weight: bold;
 }
 
+/* Media queries */
 
+/* Mobile screens - 600px */
+
+@media (max-width:600px){
+   
+    .container{
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        justify-content: center;
+        padding: 1rem 0;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        border-radius: 0;
+    }
+    .subscribe{
+        padding: 2rem 2rem;
+        
+    }
+    
+    
+}
+
+/* Tablet screens - Portrait - 900px */
+
+@media (max-width:900px){
+
+}
+
+/* Tablet screens - Landscape - 1200px */
+
+@media (max-width:1200px){
+
+}
+
+/* Desktop screens - 1800px */
+
+@media (max-width:1800px){
+
+}
+
+/* Desktop screens - Big - 1800px + */
+
+@media (min-width:1801px){
+
+}
 
 
